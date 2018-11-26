@@ -18,3 +18,10 @@ cd Python-3.7.1
 ./configure
 make
 make install
+
+#To Make Python3 Default By Replacing Python2
+mv /bin/python /bin/python_old
+cp /usr/local/bin/python3.7 /bin/python
+
+# Verify the version
+python --version
